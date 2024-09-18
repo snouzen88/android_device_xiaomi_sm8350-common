@@ -90,6 +90,10 @@ function blob_fixup() {
         vendor/lib/c2.dolby.client.so)
             "${PATCHELF}" --add-needed "libcodec2_hidl_shim.so" "${2}"
             ;;
+        vendor/etc/seccomp_policy/atfwd@2.0.policy)
+            [ "$2" = "" ] && return 0
+            grep -q "gettid: 1" "${2}" || echo "gettid: 1" >> "${2}"
+            ;;
     esac
 }
 
