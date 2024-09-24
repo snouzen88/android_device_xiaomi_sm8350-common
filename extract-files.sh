@@ -79,6 +79,9 @@ function blob_fixup() {
         vendor/lib64/android.hardware.secure_element@1.0-impl.so)
             "${PATCHELF}" --remove-needed "android.hidl.base@1.0.so" "${2}"
             ;;
+       vendor/lib64/libwvhidl.so)
+            "${PATCHELF}" --replace-needed "libcrypto.so" "libcrypto-v34.so" "${2}"
+            ;;
     esac
 }
 
