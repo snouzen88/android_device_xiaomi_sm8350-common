@@ -499,6 +499,18 @@ vendor/lib64/c2.dolby.store.so
 vendor/lib64/libdolbyottcameracontrol.so
 vendor/lib64/libdolbyvision.so
 
+# Media (OMX)
+vendor/lib/libOmxAacEnc.so
+vendor/lib/libOmxAmrEnc.so
+vendor/lib/libOmxEvrcEnc.so
+vendor/lib/libOmxG711Enc.so
+vendor/lib/libOmxQcelp13Enc.so
+vendor/lib64/libOmxAacEnc.so
+vendor/lib64/libOmxAmrEnc.so
+vendor/lib64/libOmxEvrcEnc.so
+vendor/lib64/libOmxG711Enc.so
+vendor/lib64/libOmxQcelp13Enc.so
+
 # Mlipay
 vendor/bin/mlipayd@1.1
 vendor/etc/init/vendor.xiaomi.hardware.mlipay@1.1-service.rc
