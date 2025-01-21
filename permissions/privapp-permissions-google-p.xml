@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<permissions>
+
+    <privapp-permissions package="com.google.android.apps.maps">
+        <permission name="android.permission.ACCESS_BACKGROUND_LOCATION"/>
+        <permission name="android.permission.ACCESS_COARSE_LOCATION"/>
+        <permission name="android.permission.ACCESS_FINE_LOCATION"/>
+        <permission name="android.permission.ACTIVITY_RECOGNITION"/>
+    </privapp-permissions>
+
+</permissions>
