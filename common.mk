@@ -27,8 +27,10 @@ $(call inherit-product, hardware/qcom-caf/common/common.mk)
 PRODUCT_SHIPPING_API_LEVEL := 30
 
 # App Permissions
+ifneq ($(WITH_GMS),false)
 PRODUCT_PACKAGES += \
     privapp-permissions-google-p
+endif
 
 # Audio
 PRODUCT_PACKAGES += \
